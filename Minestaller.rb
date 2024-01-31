@@ -4,5 +4,11 @@
 require 'thor'
 
 class Minestaller < Thor
-
+  map %w[--version -v] => :PrintTheVersion
+  desc "--version -v", "Print the version of Minestaller."
+  def PrintTheVersion
+    puts "0.1-alpha-dev"
+  end
 end
+
+Minestaller.start(ARGV)
