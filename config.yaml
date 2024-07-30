@@ -1,6 +1,27 @@
+# This file configures the per world settings. After install if there are more specific options that you would like to change, you can edit the server properties file directly. You can copy this file to setup multiple worlds.
 filesystem_settings:
-  main_minecraft_folder:
-  world_name_on_disk:
+  world_name_on_disk:                       # What you want the directory to be called EX. SAMS
 mincraft_server_settings:
-  world_name:
-  difficulty:
+  server_name:                              # Server Name EX. 'Steve's Awesome Minecraft Server'
+  gamemode:                                 # How you want to play. Accepted values adventure, creative, survival.
+  difficulty:                               # How hard do you want to play? Accepted values peaceful, easy, nromal, hard.
+  allow_cheats:                             # Allow things like generating items. Accpeted values true or false.
+  max_players:                              # Positive integer number. EX. 10
+  online_mode:                              # Requires users to authenticate with an XBOX id. Acceptable values true or false.
+  allow_list:                               # Enables the allow list, which only allows users by their handles and XBOX id.
+  server_port_ipv4_enable:                  # Enable or disable IPv4 for the server. Acceptable values true or false.
+  server_port_ipv4:                         # Port number that you want the server to respond to for IPv4. Integer number.
+  server_port_ipv6_enable:                  # Enable or disable IPv6 for the server. Acceptable values true or false.
+  server_port_ipv6:                         # Port number that you want the server to respond to for IPv6. Integer number.
+  enable_lan_visibility:                    # If this is true, then any custom ports assigned for IPv4 and IPv6 will be overridden with the default ports. Acceptable values true or false.
+  view_distance:                            # Allowed number of chunks that a player can see. Integer value, minumum is 5.
+  tick_distance:                            # How many chunks away that time will tick from a player.  Integer value with a range from 4 - 12.
+  player_idle_timeout:                      # Time in minutes that a player can be idle before they are disconnected. A value of 0 lets player idle indefinityly.
+  max_threads:                              # How many threads / cpu cores you want to throw at your server.
+  level_name:                               # What you want to name the level. Accepted values: Any string without semicolon symbol or symbols illegal for file name: /\n\r\t\f`?*\\<>|\":
+  level_seed:                               # Override creation of a random seed. If left blank, server will randomly generate a world seed.
+  default_player_permission_level:          # Permission level for players joining for the first time. Accepted values: "visitor", "member", "operator"
+  texturepack_required:                     # Make clients to use texture packs in the current world. Accepted values: "true" or "false".
+  content_log_file_enabled:                 # Enables logging. Allowed values true or false.
+  chat_restriction:                         # Controls chat ability of players. Accepted values are None, Dropped, Disabled.
+  disable_custom_skins:                     # Controls if players can use custom skins or if the server dictates what skins they can use.
